@@ -4,6 +4,7 @@ Ruby module parse and retrieve data from MS Excel 2007 files.
 ## Basic Usage
 
 ```Ruby
+#examples/01-basic_usage.rb
 require_relative "../lib/readxlsx"
 
 book = Readxlsx::Book.new "examples/01-basic.xlsx"
@@ -13,7 +14,15 @@ book.sheets.each_with_index do |sheet, index|
 	puts "sheet Index #{index}, row count #{rows.length} :"
 	pp rows
 end
+
+
 ```
+
+
+```Bash
+$ ruby examples/01-basic_usage.rb
+```
+
 
 ```Json
 sheet Index 0, row count 29 :
